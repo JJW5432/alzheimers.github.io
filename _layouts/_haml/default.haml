@@ -1,0 +1,68 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %title tuktuk - Landing Example
+    / Mobile Specific Metas
+    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
+    %link{href: "/alzheimers.github.io/stylesheets/tuktuk.css", rel: "stylesheet"}/
+    %link{href: "/alzheimers.github.io/stylesheets/tuktuk.theme.css", rel: "stylesheet"}/
+    / TUKTUK.WIDGETS
+    %link{href: "/alzheimers.github.io/stylesheets/tuktuk.icons.css", rel: "stylesheet"}/
+    
+    %script{src: "//code.jquery.com/jquery-1.9.1.min.js"}
+    %script{src: "/alzheimers.github.io/javascripts/tuktuk.js"}
+
+    
+    :css
+      body > header .logo {
+          margin-top: 8px;
+          margin-right: 8px;
+          max-height: 30px; }
+
+      body > footer img {
+          height: 18px;
+          position: relative;
+          top: 5px;
+          left: 2px; }
+
+      section.landing input {
+          border-radius: 5px 0px 0px 5px !important;
+
+      }
+
+      section.landing button {
+          border-radius: 0px 5px 5px 0px !important;}
+  %body.text.thin
+    / ========================== HEADER ==========================
+    %header.padding-top
+      .row
+        .column_4
+          %img.logo{src: "images/logo-green.png"}/
+        .column_4.text.center.hide-phone
+          %a.tapquo{href: "http://tapquo.com"}
+            %img{src: "http://cdn.tapquo.com/images/tapquo_circle.png"}/
+        %h5.column_4.text.right.hide-phone
+          %a.icon.download.margin-right{href: "https://github.com/soyjavi/package-tuktuk/archive/0.7.4.zip"}
+          %a.icon.github.margin-right{href: "https://github.com/soyjavi/tuktuk"}
+          %a.icon.twitter{href: "https://twitter.com/soyjavi", target: "_blank"}
+    {{ content }}
+
+    %footer.bck.dark.padding
+      .row.margin-top.margin-bottom
+        .column_5
+          %p.text.bold.big
+            Handcrafted by
+            %a.display.inline{href: "http://tapquo.com"}
+              %img{src: "http://cdn.tapquo.com/images/logo_footer.png"}/
+          We're a  user experiences company located in
+          = succeed "," do
+            %span.text.normal Bilbao
+        .column_4
+          %p.text.bold.big Join the team!
+          Let us know how you're!
+          %a.text.underline.color.theme{href: "mailto:hello@tapquo.com?subject=job"} Get in touch
+        .column_3
+          %p.text.bold.big Need some help?
+          For quick answers or help
+      %a.text.underline.color.theme{href: "https://twitter.com/tapquo", target: "_blank"} follow us
