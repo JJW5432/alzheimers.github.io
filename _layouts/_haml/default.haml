@@ -5,6 +5,7 @@
     %title tuktuk - Landing Example
     / Mobile Specific Metas
     %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
+    %link{href: "stylesheets/custom.css", rel: "stylesheet"}/
     %link{href: "stylesheets/tuktuk.css", rel: "stylesheet"}/
     %link{href: "stylesheets/tuktuk.theme.css", rel: "stylesheet"}/
     / TUKTUK.WIDGETS
@@ -35,17 +36,17 @@
           border-radius: 0px 5px 5px 0px !important;}
   %body.text.thin
     / ========================== HEADER ==========================
-    %header.padding-top
+    %header.bck.margin-top.margin-bottom
       .row
-        .column_4
-          %img.logo{src: "images/logo-green.png"}/
-        .column_4.text.center.hide-phone
-          %a.tapquo{href: "http://tapquo.com"}
-            %img{src: "http://cdn.tapquo.com/images/tapquo_circle.png"}/
-        %h5.column_4.text.right.hide-phone
-          %a.icon.download.margin-right{href: "https://github.com/soyjavi/package-tuktuk/archive/0.7.4.zip"}
-          %a.icon.github.margin-right{href: "https://github.com/soyjavi/tuktuk"}
-          %a.icon.twitter{href: "https://twitter.com/soyjavi", target: "_blank"}
+        .column_6
+          %h2.text.italic.thin Landing Template
+        %nav.column_6.text.right
+          %a.button.secondary{href: "#"}
+            %span.icon.user>
+            Login
+          %a.button{href: "#"}
+            %span.icon.pencil>
+            Signup
     {{ content }}
 
     %footer.bck.dark.padding
