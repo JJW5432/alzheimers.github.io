@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>tuktuk - Landing Example</title>
+    <!-- Mobile Specific Metas -->
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+    <link href='/alzheimers.github.io/stylesheets/tuktuk.css' rel='stylesheet'>
+    <link href='/alzheimers.github.io/stylesheets/tuktuk.theme.css' rel='stylesheet'>
+    <!-- TUKTUK.WIDGETS -->
+    <link href='/alzheimers.github.io/stylesheets/tuktuk.icons.css' rel='stylesheet'>
+    <script src='//code.jquery.com/jquery-1.9.1.min.js'></script>
+    <script src='/alzheimers.github.io/javascripts/tuktuk.js'></script>
+    <style>
+      body > header .logo {
+          margin-top: 8px;
+          margin-right: 8px;
+          max-height: 30px; }
+      
+      body > footer img {
+          height: 18px;
+          position: relative;
+          top: 5px;
+          left: 2px; }
+      
+      section.landing input {
+          border-radius: 5px 0px 0px 5px !important;
+      
+      }
+      
+      section.landing button {
+          border-radius: 0px 5px 5px 0px !important;}
+    </style>
+  </head>
+  <body class='text thin'>
+    <!-- ========================== HEADER ========================== -->
+    <header class='padding-top'>
+      <div class='row'>
+        <div class='column_4'>
+          <img class='logo' src='images/logo-green.png'>
+        </div>
+        <div class='column_4 text center hide-phone'>
+          <a class='tapquo' href='http://tapquo.com'>
+            <img src='http://cdn.tapquo.com/images/tapquo_circle.png'>
+          </a>
+        </div>
+        <h5 class='column_4 text right hide-phone'>
+          <a class='icon download margin-right' href='https://github.com/soyjavi/package-tuktuk/archive/0.7.4.zip'></a>
+          <a class='icon github margin-right' href='https://github.com/soyjavi/tuktuk'></a>
+          <a class='icon twitter' href='https://twitter.com/soyjavi' target='_blank'></a>
+        </h5>
+      </div>
+    </header>
+    {{ content }}
+    <footer class='bck dark padding'>
+      <div class='row margin-top margin-bottom'>
+        <div class='column_5'>
+          <p class='text bold big'>
+            Handcrafted by
+            <a class='display inline' href='http://tapquo.com'>
+              <img src='http://cdn.tapquo.com/images/logo_footer.png'>
+            </a>
+          </p>
+          We're a  user experiences company located in
+          <span class='text normal'>Bilbao</span>,
+        </div>
+        <div class='column_4'>
+          <p class='text bold big'>Join the team!</p>
+          Let us know how you're!
+          <a class='text underline color theme' href='mailto:hello@tapquo.com?subject=job'>Get in touch</a>
+        </div>
+        <div class='column_3'>
+          <p class='text bold big'>Need some help?</p>
+          For quick answers or help
+        </div>
+      </div>
+      <a class='text underline color theme' href='https://twitter.com/tapquo' target='_blank'>follow us</a>
+    </footer>
+  </body>
+</html>
