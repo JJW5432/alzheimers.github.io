@@ -65,3 +65,9 @@ h1#circle-bottom {
 	position: relative;
 	top:85px;
 }
+
+.quarter-circle-bottom-left, .quarter-circle-bottom-right, .quarter-circle-top-right, .quarter-circle-top-left{
+	&:hover{
+		zoom: 150%;
+	}
+}

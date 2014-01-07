@@ -38,15 +38,19 @@
     / ========================== HEADER ==========================
     %header.bck.margin-top.margin-bottom
       .row
-        .column_6
-          %h2.text.italic.thin Landing Template
-        %nav.column_6.text.right
-          %a.button.secondary{href: "#"}
-            %span.icon.user>
-            Login
-          %a.button{href: "#"}
-            %span.icon.pencil>
-            Signup
+        .column_7
+          %h2.text.light> Alzheimer's Risk Factor:
+          %h2.text.bold Know Yours
+        %nav.column_5.text.right{"data-tuktuk" => "menu"}
+          %a{href: "#", class: 'active'}
+            %span.icon.home>
+            Home
+          %a{href: "#"}
+            History
+          %a{href: "#"}
+            Research
+          %a{href: "#"}
+            About
     {{ content }}
 
     %footer.bck.dark.padding
