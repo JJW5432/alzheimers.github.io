@@ -2,7 +2,7 @@
 layout: default
 title: home
 ---
-<section class='bck theme text center' style='height: 800px'>
+<section class='bck theme text center padding' style='height: 800px'>
   <h1 id='green' style='width: 500px; height: 500px; position: relative; top: 500px; margin: auto; display: none;'>Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.</h1>
   <div id='circles' style='z-index: 100'></div>
   <script>
@@ -15,7 +15,7 @@ title: home
         return paper.path(["M", cx, cy, "L", x1, y1, "A", r, r, 0, +(endAngle - startAngle > 180), 0, x2, y2, "z"]).attr(params);
     }
     
-    var size=800
+    var size=700
     var radius = ( size - .03*size ) / 2.2
     var plus = size / 2 + .015*size
     var minus = size / 2 - .015*size
@@ -38,50 +38,38 @@ title: home
     
     var minimized = false
     
-    top_right.mouseover(function () {
-                if (! minimized) {
-                this.stop().animate({transform: "s1.1 1.1 " + plus + " " + minus}, 300, "<>");
-                //txt.stop().animate({opacity: 1}, 300, "<>");
-            }}).mouseout(function () {
-                if (! minimized) {
-                this.stop().animate({transform: ""}, 300, "<>");
-                //txt.stop().animate({opacity: 0}, 300);
-            }});      
-    
-    top_left.mouseover(function () {
-                if (! minimized) {
-                this.stop().animate({transform: "s1.1 1.1 " + minus + " " + minus}, 300, "<>");
-                //txt.stop().animate({opacity: 1}, 300, "<>");
-            }}).mouseout(function () {
-              if (! minimized) {
-                this.stop().animate({transform: ""}, 300, "<>");
-                //txt.stop().animate({opacity: 0}, 300);
-            }});      
-    
-    bottom_left.mouseover(function () {
-            if (! minimized) {
-                this.stop().animate({transform: "s1.1 1.1 " + minus + " " + plus}, 300, "<>");
-                //txt.stop().animate({opacity: 1}, 300, "<>");
-            }}).mouseout(function () {
-              if (! minimized) {
-                this.stop().animate({transform: ""}, 300, "<>");
-                //txt.stop().animate({opacity: 0}, 300);
-            }});      
-    
-    bottom_right.mouseover(function () {
-            if (! minimized) {
-                this.stop().animate({transform: "s1.1 1.1 " + plus + " " + plus}, 300, "<>");
-                //txt.stop().animate({opacity: 1}, 300, "<>");
-            }}).mouseout(function () {
-              if (! minimized) {
-                this.stop().animate({transform: ""}, 300, "<>");
-                //txt.stop().animate({opacity: 0}, 300);
-            }});
+    circle.forEach(function(e){
+      e.mouseover(function () {
+        if (! minimized) {
+          cx = e.getPath()[0].attrs.path[0][1]
+          cy = e.getPath()[0].attrs.path[0][2]
+          k = 1.1
+        }
+        //else {
+        //  cx = e.getPath()[0].attrs.path[0][1] + 300
+        //  cy = e.getPath()[0].attrs.path[0][2] + 300
+        //  k = 0.55
+        //}
+        e.stop().animate({transform: "s " + k + " " + k + " " + cx + " " + cy}, 300, "<>");
+        //txt.stop().animate({opacity: 1}, 300, "<>");
+      }).mouseout(function () {
+        if (! minimized) {
+          e.stop().animate({transform: ""}, 300, "<>");
+        }
+        //txt.stop().animate({opacity: 0}, 300);
+      })
+    })
     
     circle.click(function () {
       if (! minimized) {
-        circle.animate({transform: "s0.2 0.2 400 400t1500 1000"}, 200);
-        $("#green").css("display", "block");
+        circle.forEach(function(e){
+          cx = e.getPath()[0].attrs.path[0][1]
+          cy = e.getPath()[0].attrs.path[0][2]
+          k = 0.5
+          e.stop().animate({transform: "s " + k + " " + k + " " + cx + " " + cy}, 300, "<>");
+        })
+        circle.animate({transform: "t300 300"}, 200);
+        //$("#green").css("display", "block");
         minimized=true
       }
       else {
