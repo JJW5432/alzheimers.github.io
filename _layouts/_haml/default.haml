@@ -40,35 +40,17 @@
     %header.bck.margin-top.margin-bottom
       .row
         .column_7
-          %h2.text.light> Alzheimer's Risk Factor:
-          %h2.text.bold Know Yours
+          %h2.text.light> Risk Factor: Know Yours
         %nav.column_5.text.right{"data-tuktuk" => "menu"}
-          %a{href: "#", class: 'active'}
+          %a{href: "{{ site.baseurl }}/", class: "{% if {{page.title}} == 'home' %}active{% endif %}" }
             %span.icon.home>
             Home
-          %a{href: "#"}
-            History
+          %a{href: "{{ site.baseurl }}/play", class: "{% if {{page.title}} == 'play' %}active{% endif %}"}
+            Playroom
           %a{href: "#"}
             Research
-          %a{href: "#"}
+          %a{href: "{{ site.baseurl }}/about", class: "{% if {{page.title}} == 'about' %}active{% endif %}"}
             About
     {{ content }}
 
     %footer.bck.dark.padding
-      .row.margin-top.margin-bottom
-        .column_5
-          %p.text.bold.big
-            Handcrafted by
-            %a.display.inline{href: "http://tapquo.com"}
-              %img{src: "http://cdn.tapquo.com/images/logo_footer.png"}/
-          We're a  user experiences company located in
-          = succeed "," do
-            %span.text.normal Bilbao
-        .column_4
-          %p.text.bold.big Join the team!
-          Let us know how you're!
-          %a.text.underline.color.theme{href: "mailto:hello@tapquo.com?subject=job"} Get in touch
-        .column_3
-          %p.text.bold.big Need some help?
-          For quick answers or help
-      %a.text.underline.color.theme{href: "https://twitter.com/tapquo", target: "_blank"} follow us

@@ -38,47 +38,23 @@
     <!-- ========================== HEADER ========================== -->
     <header class='bck margin-top margin-bottom'>
       <div class='row'>
-        <div class='column_7'><h2 class='text light'>Alzheimer's Risk Factor:</h2><h2 class='text bold'>Know Yours</h2>
-        </div>
+        <div class='column_7'><h2 class='text light'>Risk Factor: Know Yours</h2></div>
         <nav class='column_5 text right' data-tuktuk='menu'>
-          <a class='active' href='#'><span class='icon home'></span>Home
+          <a class="{% if {{page.title}} == 'home' %}active{% endif %}" href='{{ site.baseurl }}/'><span class='icon home'></span>Home
           </a>
-          <a href='#'>
-            History
+          <a class="{% if {{page.title}} == 'play' %}active{% endif %}" href='{{ site.baseurl }}/play'>
+            Playroom
           </a>
           <a href='#'>
             Research
           </a>
-          <a href='#'>
+          <a class="{% if {{page.title}} == 'about' %}active{% endif %}" href='{{ site.baseurl }}/about'>
             About
           </a>
         </nav>
       </div>
     </header>
     {{ content }}
-    <footer class='bck dark padding'>
-      <div class='row margin-top margin-bottom'>
-        <div class='column_5'>
-          <p class='text bold big'>
-            Handcrafted by
-            <a class='display inline' href='http://tapquo.com'>
-              <img src='http://cdn.tapquo.com/images/logo_footer.png'>
-            </a>
-          </p>
-          We're a  user experiences company located in
-          <span class='text normal'>Bilbao</span>,
-        </div>
-        <div class='column_4'>
-          <p class='text bold big'>Join the team!</p>
-          Let us know how you're!
-          <a class='text underline color theme' href='mailto:hello@tapquo.com?subject=job'>Get in touch</a>
-        </div>
-        <div class='column_3'>
-          <p class='text bold big'>Need some help?</p>
-          For quick answers or help
-        </div>
-      </div>
-      <a class='text underline color theme' href='https://twitter.com/tapquo' target='_blank'>follow us</a>
-    </footer>
+    <footer class='bck dark padding'></footer>
   </body>
 </html>
