@@ -1,0 +1,15 @@
+svg {
+	float: left;
+	margin: 10px !important;
+}
+
+.ontop {
+	z-index: 2;
+	position: absolute;
+	left: 150px;
+	top: 800px;
+}
+
+#ocular{
+	display: none
+}
