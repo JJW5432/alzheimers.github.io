@@ -27,22 +27,22 @@
 }
 
 #eye_label {
-	left: 665px;
+	left: 655px;
 	top: 820px;
 }
 
 #blood_label {
-	left: 385px;
+	left: 365px;
 	top: 1090px;
 }
 
 #genes_label {
-	left: 665px;
+	left: 655px;
 	top: 1090px;
 }
 
 #pet_label {
-	left: 385px;
+	left: 365px;
 	top: 820px;
 }
 
@@ -59,12 +59,13 @@
 #starter img {
 	zoom: 2;
 	position: relative;
-	right: 100px;
+	right: 140px;
 }
 
 #starter h1{
 	position: relative;
-	bottom: 60px;
+	bottom: 20px;
+	right:30px;
 }
 
 #reccomendation {
