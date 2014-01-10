@@ -18,32 +18,32 @@
 
 .ontop {
 	z-index: 2;
-	position: absolute;
+	position: relative;
 }
 
 .ontop img{
-	height:26px;
-	width:32px;
+	height: 29px;
+	width: 35px;
 }
 
 #eye_label {
-	left: 655px;
-	top: 820px;
+	left:400px;
+	bottom:500px;
 }
 
 #blood_label {
-	left: 365px;
-	top: 1090px;
+	left:100px;
+	bottom: 275px;
 }
 
 #genes_label {
-	left: 655px;
-	top: 1090px;
+	left:400px;
+	bottom: 350px;
 }
 
 #pet_label {
-	left: 365px;
-	top: 820px;
+	left:100px;
+	bottom:567px;
 }
 
 #container {
