@@ -1,7 +1,7 @@
 :plain
   ---
   layout: default
-  title: home
+  title: Home
   ---
 
 %section.bck.dark.text.center.padding
@@ -23,16 +23,39 @@
 %section.bck.theme.text.left.padding{style: "height: 800px"}
   .row
     .column_4#circles
-      %script{src:"{{ site.baseurl }}/assets/javascripts/circles.js"}
-      %h4.ontop
+      %h4.ontop#eye_label
         %span.icon.eye-open
         Ocular Test
+      %h4.ontop#blood_label
+        %img{src:"{{ site.baseurl }}/assets/images/needle.png"}
+        Blood Test
+      %h4.ontop#pet_label
+        %img{src:"{{ site.baseurl }}/assets/images/brain.png"}
+        PET Scan
+      %h4.ontop#genes_label
+        %img{src:"{{ site.baseurl }}/assets/images/dna.png"}
+        Genetic Test
+      %script{src:"{{ site.baseurl }}/assets/javascripts/circles.js"}
     .column_4.offset_4
       #starter
-        %h1.align.left.text.bold How does it work?
+        %img{src:"{{ site.baseurl }}/assets/images/arrow.png"}
+        %h1.text.bold.color.normal Click to learn
+      #eye
+        %h1.align.left.text.bold Ocular Test
         %br
-        %h3.align.left The NAME consists of 4 tests designed to measure levels in the body called biomarkers that are linked with the progression of the disease.
-      #ocular
-        %h1.align.left.text.bold The Ocular Test
+        %h3.align.left This test measures the thickness of the retina. The retina is used to as an accessible way to measure brain health, because it is really an extension of the brain itself. A thinner retina would imply more neurological damage.
+      #pet
+        %h1.align.left.text.bold PET Scan
         %br
-        %h3.align.left This test measures the thickness of the retina. The retina is used to as an accessible way to measure brain health, because it is really an extension of the brain itself. A thinner retina would imply more neurolgoical damage.
+        %h3.align.left
+          A tracer containing a radioactive isotope and that bonds to amyloid is used to image the amyloid plaques in the brain, providing a way to diagnose the progress of the disease
+          %i in vivo
+          .
+      #blood
+        %h1.align.left.text.bold Blood Test
+        %br
+        %h3.align.left This test measures level of beta amyloid in the blood. As the number of amyloid plaques in the brain increases, there is less amyloid in the rest of the body, including the blood.
+      #blood
+        %h1.align.left.text.bold Blood Test
+        %br
+        %h3.align.left This test measures level of beta amyloid in the blood. As the number of amyloid plaques in the brain increases, there is less amyloid in the rest of the body, including the blood.

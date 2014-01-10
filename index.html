@@ -1,6 +1,6 @@
 ---
 layout: default
-title: home
+title: Home
 ---
 <section class='bck dark text center padding'>
   <div class='row'>
@@ -26,22 +26,51 @@ title: home
 <section class='bck theme text left padding' style='height: 800px'>
   <div class='row'>
     <div class='column_4' id='circles'>
-      <script src='{{ site.baseurl }}/assets/javascripts/circles.js'></script>
-      <h4 class='ontop'>
+      <h4 class='ontop' id='eye_label'>
         <span class='icon eye-open'></span>
         Ocular Test
       </h4>
+      <h4 class='ontop' id='blood_label'>
+        <img src='{{ site.baseurl }}/assets/images/needle.png'>
+        Blood Test
+      </h4>
+      <h4 class='ontop' id='pet_label'>
+        <img src='{{ site.baseurl }}/assets/images/brain.png'>
+        PET Scan
+      </h4>
+      <h4 class='ontop' id='genes_label'>
+        <img src='{{ site.baseurl }}/assets/images/dna.png'>
+        Genetic Test
+      </h4>
+      <script src='{{ site.baseurl }}/assets/javascripts/circles.js'></script>
     </div>
     <div class='column_4 offset_4'>
       <div id='starter'>
-        <h1 class='align left text bold'>How does it work?</h1>
-        <br>
-        <h3 class='align left'>The NAME consists of 4 tests designed to measure levels in the body called biomarkers that are linked with the progression of the disease.</h3>
+        <img src='{{ site.baseurl }}/assets/images/arrow.png'>
+        <h1 class='text bold color normal'>Click to learn</h1>
       </div>
-      <div id='ocular'>
-        <h1 class='align left text bold'>The Ocular Test</h1>
+      <div id='eye'>
+        <h1 class='align left text bold'>Ocular Test</h1>
         <br>
-        <h3 class='align left'>This test measures the thickness of the retina. The retina is used to as an accessible way to measure brain health, because it is really an extension of the brain itself. A thinner retina would imply more neurolgoical damage.</h3>
+        <h3 class='align left'>This test measures the thickness of the retina. The retina is used to as an accessible way to measure brain health, because it is really an extension of the brain itself. A thinner retina would imply more neurological damage.</h3>
+      </div>
+      <div id='pet'>
+        <h1 class='align left text bold'>PET Scan</h1>
+        <br>
+        <h3 class='align left'>
+          A tracer containing a radioactive isotope and that bonds to amyloid is used to image the amyloid plaques in the brain, providing a way to diagnose the progress of the disease
+          <i>in vivo</i>
+        </h3>
+      </div>
+      <div id='blood'>
+        <h1 class='align left text bold'>Blood Test</h1>
+        <br>
+        <h3 class='align left'>This test measures level of beta amyloid in the blood. As the number of amyloid plaques in the brain increases, there is less amyloid in the rest of the body, including the blood.</h3>
+      </div>
+      <div id='blood'>
+        <h1 class='align left text bold'>Blood Test</h1>
+        <br>
+        <h3 class='align left'>This test measures level of beta amyloid in the blood. As the number of amyloid plaques in the brain increases, there is less amyloid in the rest of the body, including the blood.</h3>
       </div>
     </div>
   </div>

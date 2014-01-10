@@ -6,10 +6,51 @@ svg {
 .ontop {
 	z-index: 2;
 	position: absolute;
-	left: 150px;
-	top: 800px;
 }
 
-#ocular{
-	display: none
+.ontop img{
+	height:26px;
+	width:32px;
+}
+
+#eye_label {
+	left: 685px;
+	top: 820px;
+}
+
+#blood_label {
+	left: 385px;
+	top: 1090px;
+}
+
+#genes_label {
+	left: 685px;
+	top: 1090px;
+}
+
+#pet_label {
+	left: 385px;
+	top: 820px;
+}
+
+#container {
+	height: 800px;
+	width: 800px;
+}
+
+#eye, #pet, #blood, #genes {
+	display: none;
+}
+
+
+#starter img {
+	zoom: 2;
+	position: relative;
+	right: 100px;
+}
+
+#starter h1{
+	position: relative;
+	bottom: 60px;
+
 }

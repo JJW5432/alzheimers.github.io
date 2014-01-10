@@ -40,23 +40,94 @@ var rad = Math.PI / 180;
         //txt.stop().animate({opacity: 0}, 300);
       }
 
-    circle.forEach(function(e){
-      e.mouseover(function () {
-          expand(e)
-        //txt.stop().animate({opacity: 1}, 300, "<>");
-      }).mouseout(function () {
-          contract(e)
-        //txt.stop().animate({opacity: 0}, 300);
-      })
+    relink_all = function () {circle.forEach(function(e){
+          e.mouseover(function () {
+              expand(e)
+            //txt.stop().animate({opacity: 1}, 300, "<>");
+          }).mouseout(function () {
+              contract(e)
+            //txt.stop().animate({opacity: 0}, 300);
+          })
+        })
+    }
+    relink_all()
+
+     selected = false;
+
+    test_of = function (e) {
+        switch (e)
+        {
+            case top_right:
+                return "eye"
+                break
+            case top_left:
+                return "pet"
+                break
+            case bottom_right:
+                return "genes"
+                break
+            case bottom_left:
+                return "blood"
+                break
+        }
+    }
+
+   cycle = function() {
+        if (selected) {
+            cycle_list = [top_left,bottom_left,bottom_right,top_right]
+            select(cycle_list[(selected[0].id)%4])
+        }
+        else {
+            select(top_left)
+        }
+    }
+
+    cycling = true
+
+    start_cycle = function () {
+            cycling = true
+            setInterval(cycle, 3000)
+    }
+    //start_cycle()
+
+    select = function (winner) {
+        if (selected != winner) {
+            $('#starter').css("display", "none")
+            relink_all()
+            circle.forEach(function(e){
+                contract(e)
+                $("#"+test_of(e)).css("display", "none")
+            })
+            expand(winner)
+            $("#"+test_of(winner)).css("display", "block")
+            winner.unmouseout()
+            selected = winner
+        }
+        else {
+            circle.forEach(function(e){
+                contract(e)
+                $("#"+test_of(e)).css("display", "none")
+            })
+            relink_all()
+            selected = false
+             $('#starter').css("display", "block")
+            //if (! cycling) {start_cycle()}
+            //throw new Error("linked")
+        }
+    }
+
+    circle.forEach(function(quarter){
+        quarter.click(function() {select(quarter); //clearInterval(start_cycle()); cycling = false
+        })
     })
 
-    var selected;
+    //select(top_left);
 
-    top_right.click(function () {
-        if (selected != top)
-        $("#starter").css("display", "none")
-        $("#ocular").css("display", "block")
-        top_right.unmouseout()
-        expand(top_right)
-        selected = top_right
-    })
+    $('#eye_label').click(function() {select(top_right)}).hover(function() {expand(top_right)}, function() {contract(top_right)})
+    $('#blood_label').click(function() {select(bottom_left)}).hover(function() {expand(bottom_left)}, function() {contract(bottom_left)})
+    $('#pet_label').click(function() {select(top_left)}).hover(function() {expand(top_left)}, function() {contract(top_left)})
+    $('#genes_label').click(function() {select(bottom_right)}).hover(function() {expand(bottom_right)}, function() {contract(bottom_right)})
+
+
+
+
