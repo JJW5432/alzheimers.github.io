@@ -22,10 +22,10 @@ var rad = Math.PI / 180;
     var bottom_right = paper.set();
     var circle = paper.set()
     
-    top_right.push (paper.sector(plus, minus, radius, 0, 90, {"fill": "red", "stroke": "none"}) )
-    top_left.push ( paper.sector(minus, minus, radius, 90, 180, {"fill": "green", "stroke": "none"}) )
-    bottom_left.push ( paper.sector(minus, plus, radius, 180, 270, {"fill": "blue", "stroke": "none"}) )
-    bottom_right.push ( paper.sector(plus, plus, radius, 270, 0, {"fill": "purple", "stroke": "none"}) )
+    top_right.push (paper.sector(plus, minus, radius, 0, 90, {"fill": "#602bab", "stroke": "none"}) )
+    top_left.push ( paper.sector(minus, minus, radius, 90, 180, {"fill": "#fdb800", "stroke": "none"}) )
+    bottom_left.push ( paper.sector(minus, plus, radius, 180, 270, {"fill": "#187fcb", "stroke": "none"}) )
+    bottom_right.push ( paper.sector(plus, plus, radius, 270, 0, {"fill": "#ff0064", "stroke": "none"}) )
     circle.push(top_right, top_left, bottom_left, bottom_right)
 
     expand = function (e) {
