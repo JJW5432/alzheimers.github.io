@@ -1,6 +1,19 @@
-svg {
+.section{
+	height: 800px;
+}
+
+#circles {
 	float: left;
 	margin: 10px !important;
+
+}
+
+#slider{
+	float:right;
+}
+
+#slider svg {
+	height: 600px;
 }
 
 .ontop {
@@ -14,7 +27,7 @@ svg {
 }
 
 #eye_label {
-	left: 685px;
+	left: 665px;
 	top: 820px;
 }
 
@@ -24,7 +37,7 @@ svg {
 }
 
 #genes_label {
-	left: 685px;
+	left: 665px;
 	top: 1090px;
 }
 
@@ -52,5 +65,12 @@ svg {
 #starter h1{
 	position: relative;
 	bottom: 60px;
+}
 
+#reccomendation {
+	z-index: 2;
+	position: relative;
+	bottom:400px;
+	left: 300px;
+	width: 1000px;
 }

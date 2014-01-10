@@ -20,7 +20,7 @@
         %span.text.italic before
         the damage affects behavior, so that we stop the disease before it affects your loved ones.
 
-%section.bck.theme.text.left.padding{style: "height: 800px"}
+%section.bck.theme.text.left.padding
   .row
     .column_4#circles
       %h4.ontop#eye_label
@@ -59,3 +59,11 @@
         %h1.align.left.text.bold Genetic Test
         %br
         %h3.align.left Certain genetic mutations greatly increase the risk of developing Alzheimer's, such as APOE e4.
+%section.bck.light.padding{style:"height:700px"}
+  .row
+    .column_5
+      %h3.align.left A stastical algorithm combines the test results into a single number describing the likelihood that a patient has Alzheimer's. Based on this, your doctor can reccomend that:
+      %br
+    .column_3#slider
+      %script{src:"{{ site.baseurl }}/assets/javascripts/slider.js"}
+  %h1#reccomendation.text.bold.column_4 you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediatly.

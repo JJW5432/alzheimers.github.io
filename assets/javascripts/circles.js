@@ -13,7 +13,7 @@ var rad = Math.PI / 180;
     var minus = size / 2 - .015*size
     
 
-    var paper = Raphael(document.getElementById("circles"), size, size);
+    var paper = Raphael(document.getElementById("circles"), 1000, size);
 
 
     var top_right = paper.set();
