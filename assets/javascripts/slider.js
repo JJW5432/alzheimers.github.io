@@ -39,7 +39,7 @@
           if (percent < 11) {reccomendation = "you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediatly."}
           else if (percent < 45) {reccomendation = "you increase the frequency of the testing you receive; it is likely that you will develop Alzheimer's soon."}
           else if (percent < 80) {reccomendation = "you begin preliminary treatments to reduce the number of plaques and slow neurodegeneration."}
-          else {reccomendation = "you begin treatment immediatly."}
+          else {reccomendation = "you begin treatment immediately."}
 
           $("#reccomendation").text(reccomendation)
         }
