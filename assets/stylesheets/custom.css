@@ -71,7 +71,15 @@
 #reccomendation {
 	z-index: 2;
 	position: relative;
-	bottom:400px;
-	left: 300px;
-	width: 1000px;
+	width: 100%;
+}
+
+#reccomendation_container {
+	z-index: 2;
+	position: relative;
+	bottom:450px;
+}
+
+span.alz {
+	font-size: 2.8em
 }

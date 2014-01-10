@@ -7,16 +7,18 @@
 %section.bck.dark.text.center.padding
   .row
     .column_8.align.left{style: "font-size:2.8em"}
-      %p.text.bold By the time you know&hellip;
+      %p.text.bold 
+        %span.alz Alzheimer&apos;s
+        \: By the time you know&hellip;
       %p.text.italic it's already too late
   %br
   .row
     .column_10.offset_2
       %h3.align.left
-        Once neurogeneration occurs, the damge is irreversable, so why would you wait until there are behavioral changes when diagnosing Alzheimer&apos;s?
+        Once neurodegeneration occurs, the damge is irreversable, so why would you wait until there are behavioral changes to diagnose Alzheimer&apos;s?
         %br
         %br
-        We&apos;d like to set the bar a little higher: diagnose Alzheimer's
+        We&apos;d like to set the bar a little higher: to diagnose Alzheimer's
         %span.text.italic before
         the damage affects behavior, so that we stop the disease before it affects your loved ones.
 
@@ -48,7 +50,7 @@
         %h1.align.left.text.bold PET Scan
         %br
         %h3.align.left
-          A tracer containing a radioactive isotope and that bonds to amyloid is used to image the amyloid plaques in the brain, providing a way to diagnose the progress of the disease
+          A radioactive tracer that bonds to amyloid is used to image the amyloid plaques in the brain, providing a way to diagnose the progress of the disease
           %i in vivo
           \.
       #blood
@@ -61,9 +63,11 @@
         %h3.align.left Certain genetic mutations greatly increase the risk of developing Alzheimer's, such as APOE e4.
 %section.bck.light.padding{style:"height:700px"}
   .row
-    .column_5
-      %h3.align.left A stastical algorithm combines the test results into a single number describing the likelihood that a patient has Alzheimer's. Based on this, your doctor can reccomend that:
+    .column_6
+      %h3.align.left A stastical algorithm combines the test results into a probability that a patient has Alzheimer's. Based on this, your doctor can recommend that:
       %br
     .column_3#slider
       %script{src:"{{ site.baseurl }}/assets/javascripts/slider.js"}
-  %h1#reccomendation.text.bold.column_4 you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediatly.
+  .row#reccomendation_container
+    .column_9.offset_1
+      %h1#reccomendation.text.bold.column_4 you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediately.
