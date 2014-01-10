@@ -18,13 +18,16 @@
   s = paper.set()
   p = paper.set()
   s.push(paper.sector(200, 30, 25, 0, 180, {"fill": "red", "stroke": "none"}) )
-  r1 = paper.rect(175,30, 50, 550).attr({"fill":"90-green:0-yellow:50-red:100", "stroke":"none"})
+  r = paper.rect(175,30, 50, 550).attr({"fill":"90-green:0-yellow:50-red:100", "stroke":"none"})
   p.push(paper.sector(200, 575, 25, 180, 360, {"fill": "green", "stroke": "none"}) )
+
+  slider = paper.set()
+  slider.push(s).push(r).push(p)
 
   starting_percentage = 0.10
   starting = (1 - starting_percentage) * 545
   g = paper.set()
-  g.push(c = paper.circle(200,starting+30,25).attr({"fill": "white", "fill-opacity": 0} ))
+  g.push(c = paper.circle(200,starting+30,25).attr({"fill": "white", "fill-opacity":0} ))
   g.push(t = paper.text(100, starting+30, starting_percentage*100+"%").attr({"font-size": 16*2.6 }))
 
   var me = g,
@@ -49,3 +52,11 @@
         };
 
   c.drag(moveFnc, startFnc, endFnc);
+  var e
+  slider.click(function(event){
+    ly = event.pageY; 
+    e=event
+    ly = 1790 - event.pageY + -1*starting
+    console.log(ly)
+    c.attr('y', ly);
+  })
