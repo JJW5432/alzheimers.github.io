@@ -1,0 +1,73 @@
+:plain
+  ---
+  layout: default
+  title: Tests
+  ---
+
+%section.bck.darkest.landing.text.center.color.white
+  .row
+    .column_10.offset_1
+      %h1
+        %strong> tuk
+        tuk
+      %h2.margin-bottom Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  .row
+    .column_6.offset_3.form.subscribe
+      %input#mail.large{placeholder: "Your email address", type: "email"}/
+      %button.button.large.icon.envelope
+  %h5.text.book Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+%section.bck.theme.padding.text.center
+  .row.padding-bottom
+    .column_10.offset_1
+      %h1.text.book.color.default Lorem ipsum dolor sit amet
+      %h4
+        Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
+  .row.padding-top
+    .column_3
+      %h2.icon.user
+      %h5.text.normal Lorem ipsum dolor sit
+      %small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.
+    .column_3
+      %h2.icon.group
+      %h5.text.normal Lorem ipsum dolor sit
+      %small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.
+    .column_3
+      %h2.icon.cog
+      %h5.text.normal Lorem ipsum dolor sit
+      %small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.
+    .column_3
+      %h2.icon.twitter
+      %h5.text.normal Lorem ipsum dolor sit
+      %small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.
+%section.bck.light.padding
+  .row.text.thin.center
+    .column_10.offset_1
+      %h1.text.book.color.theme Lorem ipsum dolor sit amet
+      %h4
+        Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
+%section.bck.lightest.landing
+  .row.text.center
+    .column_10.offset_1
+      %h2.text.bold.color.theme Lorem ipsum dolor sit amet
+      %h4.text.book.italic Quam sunt quos minima consequatur
+      %a.button.large.margin-top{href: "#"} Yes, please!
+%section.padding.bck.color
+  .row.margin-bottom
+    .column_10.offset_1.text.center
+      %h1.color.book.theme Author
+      %h3.text.thin
+        Javi Jimenez is the CTO and co-founder of
+        = succeed "." do
+          %a.text.normal{href: "http://tapquo.com"} tapquo
+        = succeed "," do
+          %a.text.normal{href: "http://lungo.tapquo.com"} Lungo
+        = succeed "," do
+          %a.text.normal{href: "http://quojs.tapquo.com"} QuoJS
+        %a.text.normal{href: "http://monocle.tapquo.com"} Monocle
+        used by thousands of developers around the world.
+  .row
+    .column_4.offset_4.text.center
+      %img.responsive.rounded.margin-bottom{src: "http://cdn.tapquo.com/photos/soyjavi.jpg"}/
+      %a.twitter-follow-button{"data-dnt" => "true", "data-show-count" => "true", href: "https://twitter.com/soyjavi"} Follow @soyjavi
+      :javascript
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

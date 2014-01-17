@@ -45,10 +45,10 @@
           %a{href: "{{ site.baseurl }}/", class: "{% if {{page.title}} == 'Home' %}active{% endif %}" }
             %span.icon.home>
             Home
-          %a{href: "{{ site.baseurl }}/play", class: "{% if {{page.title}} == 'Play' %}active{% endif %}"}
-            Playroom
-          %a{href: "#"}
-            Research
+          %a{href: "{{ site.baseurl }}/tests", class: "{% if {{page.title}} == 'Tests' %}active{% endif %}"}
+            Tests
+          %a{href: "{{ site.baseurl }}/results", class: "{% if {{page.title}} == 'Results' %}active{% endif %}"}
+            Results
           %a{href: "{{ site.baseurl }}/about", class: "{% if {{page.title}} == 'About' %}active{% endif %}"}
             About
     {{ content }}

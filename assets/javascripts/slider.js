@@ -38,6 +38,7 @@
           me.transform('t' + 0 + ',' + ly);
           percent = Math.round((1-ly/545)*100-90)
           t.attr("text", percent+"%" )
+          console.log(ly)
 
           if (percent < 11) {reccomendation = "you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediatly."}
           else if (percent < 45) {reccomendation = "you increase the frequency of the testing you receive; it is likely that you will develop Alzheimer's soon."}
@@ -53,10 +54,11 @@
 
   c.drag(moveFnc, startFnc, endFnc);
   var e
-  slider.click(function(event){
-    ly = event.pageY; 
+  slider.click(function () {
     e=event
-    ly = 1790 - event.pageY + -1*starting
-    console.log(ly)
-    c.attr('y', ly);
+    console.log(e)
   })
+
+  convert = function (xin) {
+    return 100 - (100/435)*(xin-355)
+  }
