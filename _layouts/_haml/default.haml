@@ -5,7 +5,8 @@
     %title {{page.title}}
     / Mobile Specific Metas
     %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
-    %link{href: "{{ site.baseurl }}/assets/stylesheets/custom.css", rel: "stylesheet"}/
+    %link{href: "{{ site.baseurl }}/assets/stylesheets/{{ page.title | downcase }}.css", rel: "stylesheet"}/
+    %link{href: "{{ site.baseurl }}/assets/stylesheets/site.css", rel: "stylesheet"}/
     %link{href: "{{ site.baseurl }}/assets/stylesheets/tuktuk.css", rel: "stylesheet"}/
     %link{href: "{{ site.baseurl }}/assets/stylesheets/tuktuk.theme.css", rel: "stylesheet"}/
     / TUKTUK.WIDGETS
@@ -35,9 +36,9 @@
 
       section.landing button {
           border-radius: 0px 5px 5px 0px !important;}
-  %body.text.thin
+  %body
     / ========================== HEADER ==========================
-    %header.bck.margin-top.margin-bottom
+    %header.bck.padding-top.padding-bottom
       .row
         .column_7
           %h2.text.light> Risk Factor: Know Yours
@@ -53,4 +54,4 @@
             About
     {{ content }}
 
-    %footer.bck.dark.padding
+    {% if {{page.title}} == 'Home' %}<footer class = "bck dark padding"></footer>{% endif %}

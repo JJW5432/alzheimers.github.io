@@ -5,7 +5,8 @@
     <title>{{page.title}}</title>
     <!-- Mobile Specific Metas -->
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
-    <link href='{{ site.baseurl }}/assets/stylesheets/custom.css' rel='stylesheet'>
+    <link href='{{ site.baseurl }}/assets/stylesheets/{{ page.title | downcase }}.css' rel='stylesheet'>
+    <link href='{{ site.baseurl }}/assets/stylesheets/site.css' rel='stylesheet'>
     <link href='{{ site.baseurl }}/assets/stylesheets/tuktuk.css' rel='stylesheet'>
     <link href='{{ site.baseurl }}/assets/stylesheets/tuktuk.theme.css' rel='stylesheet'>
     <!-- TUKTUK.WIDGETS -->
@@ -34,9 +35,9 @@
           border-radius: 0px 5px 5px 0px !important;}
     </style>
   </head>
-  <body class='text thin'>
+  <body>
     <!-- ========================== HEADER ========================== -->
-    <header class='bck margin-top margin-bottom'>
+    <header class='bck padding-top padding-bottom'>
       <div class='row'>
         <div class='column_7'><h2 class='text light'>Risk Factor: Know Yours</h2></div>
         <nav class='column_5 text right' data-tuktuk='menu'>
@@ -55,6 +56,6 @@
       </div>
     </header>
     {{ content }}
-    <footer class='bck dark padding'></footer>
+    {% if {{page.title}} == 'Home' %}<footer class = "bck dark padding"></footer>{% endif %}
   </body>
 </html>

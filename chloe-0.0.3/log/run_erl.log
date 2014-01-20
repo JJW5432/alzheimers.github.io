@@ -1,8 +1,0 @@
-run_erl [4635] Fri Jan 17 00:14:26 2014
-Args before exec of shell:
-run_erl [4635] Fri Jan 17 00:14:26 2014
-argv[0] = sh
-run_erl [4635] Fri Jan 17 00:14:26 2014
-argv[1] = -c
-run_erl [4635] Fri Jan 17 00:14:26 2014
-argv[2] = exec /Users/Jake/Desktop/alzheimers.github.io/chloe-0.0.3/bin/chloe console

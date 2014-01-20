@@ -4,70 +4,39 @@
   title: Tests
   ---
 
-%section.bck.darkest.landing.text.center.color.white
+%section#pet.color.white.padding
+  .row.padding
+    .column_12
+      %h1.text.bold.align.center PET Scan
   .row
-    .column_10.offset_1
-      %h1
-        %strong> tuk
-        tuk
-      %h2.margin-bottom Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    .column_12
+      %img{src:"{{ site.baseurl }}/assets/images/pet.jpg", alt:"retina", title:"retina", align:'right', style:"padding-left:15px"}
+      %h2 Pittsburgh compuond is a radioactive tracer developed specifically to have high affinity for beta amyloid and to cross the blood-brain barrier well. It also contains a radioactive isotope with a short halflife. When it decays, it produces a positron. The positron collides with an electron, creating two photons traveling in opposite directions. Once detected, the original position of the decay can be extrapoloated. This allows for the creation of colored maps based on the concentration of decays, and therefore beta amyloid.
+      
+      
+%section#eye.color.white.padding
+  .row.padding
+    .column_12
+      %h1.text.bold.align.center Eye Test
   .row
-    .column_6.offset_3.form.subscribe
-      %input#mail.large{placeholder: "Your email address", type: "email"}/
-      %button.button.large.icon.envelope
-  %h5.text.book Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-%section.bck.theme.padding.text.center
-  .row.padding-bottom
-    .column_10.offset_1
-      %h1.text.book.color.default Lorem ipsum dolor sit amet
-      %h4
-        Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
-  .row.padding-top
-    .column_3
-      %h2.icon.user
-      %h5.text.normal Lorem ipsum dolor sit
-      %small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.
-    .column_3
-      %h2.icon.group
-      %h5.text.normal Lorem ipsum dolor sit
-      %small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.
-    .column_3
-      %h2.icon.cog
-      %h5.text.normal Lorem ipsum dolor sit
-      %small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.
-    .column_3
-      %h2.icon.twitter
-      %h5.text.normal Lorem ipsum dolor sit
-      %small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.
-%section.bck.light.padding
-  .row.text.thin.center
-    .column_10.offset_1
-      %h1.text.book.color.theme Lorem ipsum dolor sit amet
-      %h4
-        Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
-%section.bck.lightest.landing
-  .row.text.center
-    .column_10.offset_1
-      %h2.text.bold.color.theme Lorem ipsum dolor sit amet
-      %h4.text.book.italic Quam sunt quos minima consequatur
-      %a.button.large.margin-top{href: "#"} Yes, please!
-%section.padding.bck.color
-  .row.margin-bottom
-    .column_10.offset_1.text.center
-      %h1.color.book.theme Author
-      %h3.text.thin
-        Javi Jimenez is the CTO and co-founder of
-        = succeed "." do
-          %a.text.normal{href: "http://tapquo.com"} tapquo
-        = succeed "," do
-          %a.text.normal{href: "http://lungo.tapquo.com"} Lungo
-        = succeed "," do
-          %a.text.normal{href: "http://quojs.tapquo.com"} QuoJS
-        %a.text.normal{href: "http://monocle.tapquo.com"} Monocle
-        used by thousands of developers around the world.
+    .column_12
+      %img{src:"{{ site.baseurl }}/assets/images/retina.jpg", alt:"retina", title:"retina", align:"left", style:"padding-right:15px;"}
+      %h2 Due to its convenience, this test is administered most frequently. It examines many characteristics of the eye to detect brain damage. A thinning retina can betray neuron death and prompt more test to determine the cause. Retinal plaques also can often be seen in the eye before they are visible in the brain. Telltale changes in the veins of the eye, specifically in thickness, length, curviness, and branching patterns can also alert doctors to brain issues.
+
+%section#genes.padding.color.white
+  .row.padding
+    .column_12
+      %h1.text.bold.align.center Genetic Test
   .row
-    .column_4.offset_4.text.center
-      %img.responsive.rounded.margin-bottom{src: "http://cdn.tapquo.com/photos/soyjavi.jpg"}/
-      %a.twitter-follow-button{"data-dnt" => "true", "data-show-count" => "true", href: "https://twitter.com/soyjavi"} Follow @soyjavi
-      :javascript
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    .column_12
+      %img{src:"{{ site.baseurl }}/assets/images/retina.jpg", alt:"retina", title:"retina", align:"right", style:"padding-left:15px"}
+      %h2 Due to its convenience, this test is administered most frequently. It examines many characteristics of the eye to detect brain damage. A thinning retina can betray neuron death and prompt more test to determine the cause. Retinal plaques also can often be seen in the eye before they are visible in the brain. Telltale changes in the veins of the eye, specifically in thickness, length, curviness, and branching patterns can also alert doctors to brain issues.
+
+%section#blood.padding.color.white
+  .row.padding
+    .column_12
+      %h1.text.bold.align.center Blood/CSF Test
+  .row
+    .column_12
+      %img{src:"{{ site.baseurl }}/assets/images/retina.jpg", alt:"retina", title:"retina", align:"left", style:"padding-right:15px;"}
+      %h2 Both tests measure the concentration of three proteins: beta amyloid, tau protein, and a specific type of tau closely assosciated with neurofibrillary tangles called phosphorylated tau (P-tau). Cerebrospinal fluid (CSF) levels of beta amyloid decrease as more beta amyloid is deposited in plaques, and levels of tau and P-tau increase as neurons die and neurofibrillary tangles form. Blood levels should follow a similar pattern. The blood test, while less accurate, is cheap and noninvasive compared to the spinal tap required for CSF. The blood test can be given more frequently and the CSF test given as needed.

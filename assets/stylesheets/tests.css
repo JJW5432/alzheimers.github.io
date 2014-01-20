@@ -1,0 +1,23 @@
+#eye {
+	background-color: #602bab;
+}
+
+#pet {
+	background-color: #fdb800;
+}
+
+#genes {
+	background-color: #ff0064;
+}
+
+#blood {
+	background-color: #187fcb;
+}
+
+h1{
+	font-size:6.8em !important;
+}
+
+#pet, #blood, #genes, #eye {
+	min-height:90%;
+}
