@@ -19,6 +19,7 @@
 .ontop {
 	z-index: 2;
 	position: relative;
+	text-align: center;
 }
 
 .ontop img{
