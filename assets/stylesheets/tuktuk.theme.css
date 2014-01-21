@@ -7,7 +7,7 @@ body .radius{-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:
 body nav[data-tuktuk=menu] > a{-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;}
 body nav[data-tuktuk=menu] > a:hover{background-color:rgba(0,0,0,0.05)}
 body nav[data-tuktuk=menu] > a.active{color:#34495e;background-color:rgba(0,0,0,0.1);}
-body nav[data-tuktuk=menu] > a.active .icon{color:#1abc9c}
+body nav[data-tuktuk=menu] > a.active .icon{color:#fdb800}
 body nav[data-tuktuk=menu] > a:not(.active):not(:hover) > .icon,body nav[data-tuktuk=menu] > a small{opacity:.6;font-weight:400}
 body .bck.color nav[data-tuktuk=menu] > a:hover,body .bck.dark nav[data-tuktuk=menu] > a:hover{background-color:rgba(0,0,0,0.07)}
 body .bck.color nav[data-tuktuk=menu] > a.active,body .bck.dark nav[data-tuktuk=menu] > a.active{background-color:rgba(0,0,0,0.15)}

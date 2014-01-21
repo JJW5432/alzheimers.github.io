@@ -40,16 +40,16 @@
     <header class='bck padding-top padding-bottom'>
       <div class='row'>
         <div class='column_7'><h2 class='text light'>Risk Factor: Know Yours</h2></div>
-        <nav class='column_5 text right' data-tuktuk='menu'>
-          <a class="{% if {{page.title}} == 'Home' %}active{% endif %}" href='{{ site.baseurl }}/'><span class='icon home'></span>Home
+        <nav class='column_5 text right normal' data-tuktuk='menu'>
+          <a class="{% if {{page.title}} == 'Home' %}active{% endif %}" href='{{ site.baseurl }}/' id='home'><span class='icon home'></span>Home
           </a>
-          <a class="{% if {{page.title}} == 'Tests' %}active{% endif %}" href='{{ site.baseurl }}/tests'>
+          <a class="{% if {{page.title}} == 'Tests' %}active{% endif %}" href='{{ site.baseurl }}/tests' id='tests'>
             Tests
           </a>
-          <a class="{% if {{page.title}} == 'Results' %}active{% endif %}" href='{{ site.baseurl }}/results'>
+          <a class="{% if {{page.title}} == 'Results' %}active{% endif %}" href='{{ site.baseurl }}/results' id='results'>
             Results
           </a>
-          <a class="{% if {{page.title}} == 'About' %}active{% endif %}" href='{{ site.baseurl }}/about'>
+          <a class="{% if {{page.title}} == 'About' %}active{% endif %}" href='{{ site.baseurl }}/about' id='about'>
             About
           </a>
         </nav>

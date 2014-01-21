@@ -9,3 +9,21 @@ header {
 figcaption{
 	display:inline;
 }
+
+a#home:hover{
+	color:#fdb800;
+}
+
+.active .icon.home{font-color: #fdb800}
+
+a#tests:hover{
+	color:#ff0064;
+}
+
+a#results:hover{
+	color:#187fcb;
+}
+
+a#about:hover{
+	color:#602bab;
+}

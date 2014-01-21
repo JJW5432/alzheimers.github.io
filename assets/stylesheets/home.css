@@ -1,5 +1,5 @@
-.section{
-	height: 800px;
+section {
+	max-height:800px ;
 }
 
 #circles {
@@ -28,22 +28,22 @@
 }
 
 #eye_label {
-	left:400px;
+	left:300px;
 	bottom:500px;
 }
 
 #blood_label {
-	left:80px;
+	left:20px;
 	bottom: 275px;
 }
 
 #genes_label {
-	left:400px;
+	left:300px;
 	bottom: 350px;
 }
 
 #pet_label {
-	left:100px;
+	left:30px;
 	bottom:567px;
 }
 
