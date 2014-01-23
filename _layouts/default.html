@@ -40,16 +40,18 @@
     <!-- ========================== HEADER ========================== -->
     <header class='bck padding-top padding-bottom'>
       <div class='row'>
-        <div class='column_7'><h2 class='text light'>Risk Factor: Know Yours</h2></div>
-        <nav class='column_5 text right normal' data-tuktuk='menu'>
+        <div class='column_5'><h2 class='text light'>Risk Factor: Know Yours</h2></div>
+        <nav class='column_7 text right normal' data-tuktuk='menu'>
           <a class="{% if {{page.title}} == 'Home' %}active{% endif %}" href='{{ site.baseurl }}/' id='home'><span class='icon home'></span>Home
           </a>
-          <a class="{% if {{page.title}} == 'Tests' %}active{% endif %}" href='{{ site.baseurl }}/tests' id='tests'>
-            Tests
-          </a>
-          <a class="{% if {{page.title}} == 'Algorithm' %}active{% endif %}" href='{{ site.baseurl }}/algorithm' id='results'>
-            Algorithm
-          </a>
+          <!-- /%a#tests{href: "{{ site.baseurl }}/tests", class: "{% if {{page.title}} == 'Tests' %}active{% endif %}"} -->
+          <!-- /Tests -->
+          <!-- /%a#results{href: "{{ site.baseurl }}/algorithm", class: "{% if {{page.title}} == 'Algorithm' %}active{% endif %}"} -->
+          <!-- /Algorithm -->
+          <a class="{% if {{page.title}} == 'Eye' %}active{% endif %}" href='{{ site.baseurl }}/eye'>Eye Test</a>
+          <a class="{% if {{page.title}} == 'PET' %}active{% endif %}" href='{{ site.baseurl }}/pet'>PET Scan</a>
+          <a class="{% if {{page.title}} == 'Genes' %}active{% endif %}" href='{{ site.baseurl }}/genes'>Genetic Test</a>
+          <a class="{% if {{page.title}} == 'Blood' %}active{% endif %}" href='{{ site.baseurl }}/blood'>Blood/CSF Test</a>
         </nav>
       </div>
     </header>

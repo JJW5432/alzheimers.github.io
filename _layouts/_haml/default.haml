@@ -41,14 +41,18 @@
     / ========================== HEADER ==========================
     %header.bck.padding-top.padding-bottom
       .row
-        .column_7
+        .column_5
           %h2.text.light> Risk Factor: Know Yours
-        %nav.column_5.text.right.normal{"data-tuktuk" => "menu"}
+        %nav.column_7.text.right.normal{"data-tuktuk" => "menu"}
           %a#home{href: "{{ site.baseurl }}/", class: "{% if {{page.title}} == 'Home' %}active{% endif %}" }
             %span.icon.home>
             Home
-          %a#tests{href: "{{ site.baseurl }}/tests", class: "{% if {{page.title}} == 'Tests' %}active{% endif %}"}
-            Tests
-          %a#results{href: "{{ site.baseurl }}/algorithm", class: "{% if {{page.title}} == 'Algorithm' %}active{% endif %}"}
-            Algorithm
+          //%a#tests{href: "{{ site.baseurl }}/tests", class: "{% if {{page.title}} == 'Tests' %}active{% endif %}"}
+          //Tests
+          //%a#results{href: "{{ site.baseurl }}/algorithm", class: "{% if {{page.title}} == 'Algorithm' %}active{% endif %}"}
+          //Algorithm
+          %a{href: "{{ site.baseurl }}/eye", class: "{% if {{page.title}} == 'Eye' %}active{% endif %}" } Eye Test
+          %a{href: "{{ site.baseurl }}/pet", class: "{% if {{page.title}} == 'PET' %}active{% endif %}" } PET Scan
+          %a{href: "{{ site.baseurl }}/genes", class: "{% if {{page.title}} == 'Genes' %}active{% endif %}" } Genetic Test
+          %a{href: "{{ site.baseurl }}/blood", class: "{% if {{page.title}} == 'Blood' %}active{% endif %}" } Blood/CSF Test
     {{ content }}
