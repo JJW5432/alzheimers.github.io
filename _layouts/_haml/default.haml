@@ -51,8 +51,8 @@
           //Tests
           //%a#results{href: "{{ site.baseurl }}/algorithm", class: "{% if {{page.title}} == 'Algorithm' %}active{% endif %}"}
           //Algorithm
-          %a{href: "{{ site.baseurl }}/eye", class: "{% if {{page.title}} == 'Eye' %}active{% endif %}" } Eye Test
-          %a{href: "{{ site.baseurl }}/pet", class: "{% if {{page.title}} == 'PET' %}active{% endif %}" } PET Scan
-          %a{href: "{{ site.baseurl }}/genes", class: "{% if {{page.title}} == 'Genes' %}active{% endif %}" } Genetic Test
-          %a{href: "{{ site.baseurl }}/blood", class: "{% if {{page.title}} == 'Blood' %}active{% endif %}" } Blood/CSF Test
+          %a#eye-nav{href: "{{ site.baseurl }}/eye", class: "{% if {{page.title}} == 'Eye' %}active{% endif %}" } Eye Test
+          %a#pet-nav{href: "{{ site.baseurl }}/pet", class: "{% if {{page.title}} == 'PET' %}active{% endif %}" } PET Scan
+          %a#genes-nav{href: "{{ site.baseurl }}/genes", class: "{% if {{page.title}} == 'Genes' %}active{% endif %}" } Genetic Test
+          %a#blood-nav{href: "{{ site.baseurl }}/blood", class: "{% if {{page.title}} == 'Blood' %}active{% endif %}" } Blood/CSF Test
     {{ content }}

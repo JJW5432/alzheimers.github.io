@@ -10,20 +10,18 @@ figcaption{
 	display:inline;
 }
 
-a#home:hover{
+a#pet-nav:hover{
 	color:#fdb800;
 }
 
-.active .icon.home{font-color: #fdb800}
-
-a#tests:hover{
+a#genes-nav:hover{
 	color:#ff0064;
 }
 
-a#results:hover{
+a#blood-nav:hover{
 	color:#187fcb;
 }
 
-a#about:hover{
+a#eye-nav:hover{
 	color:#602bab;
 }
