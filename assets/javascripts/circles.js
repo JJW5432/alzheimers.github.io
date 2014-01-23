@@ -128,4 +128,4 @@ var rad = Math.PI / 180;
     $('#pet_label').click(function() {select(top_left)}).hover(function() {expand(top_left)}, function() {contract(top_left)})
     $('#genes_label').click(function() {select(bottom_right)}).hover(function() {expand(bottom_right)}, function() {contract(bottom_right)})
 
-    expand(top_right)
+    select(top_right)
