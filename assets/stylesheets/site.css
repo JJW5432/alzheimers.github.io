@@ -10,18 +10,18 @@ figcaption{
 	display:inline;
 }
 
-a#pet-nav:hover{
+a#pet-nav:hover, a#pet-nav.active{
 	color:#fdb800;
 }
 
-a#genes-nav:hover{
+a#genes-nav:hover, a#genes-nav.active{
 	color:#ff0064;
 }
 
-a#blood-nav:hover{
+a#blood-nav:hover, a#blood-nav.active{
 	color:#187fcb;
 }
 
-a#eye-nav:hover{
+a#eye-nav:hover, a#eye-nav.active{
 	color:#602bab;
 }
