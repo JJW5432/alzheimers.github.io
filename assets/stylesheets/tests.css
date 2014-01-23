@@ -21,3 +21,7 @@ h1{
 #pet, #blood, #genes, #eye {
 	min-height:90%;
 }
+
+#blood img {
+	width: 400px;
+}
