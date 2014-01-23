@@ -1,0 +1,19 @@
+#reccomendation {
+	z-index: 2;
+	position: relative;
+	width: 100%;
+}
+
+#reccomendation_container {
+	z-index: 2;
+	position: relative;
+	bottom:400px;
+}
+
+#slider{
+	float:right;
+}
+
+#slider svg {
+	height: 600px;
+}

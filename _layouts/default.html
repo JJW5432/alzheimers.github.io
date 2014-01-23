@@ -47,16 +47,12 @@
           <a class="{% if {{page.title}} == 'Tests' %}active{% endif %}" href='{{ site.baseurl }}/tests' id='tests'>
             Tests
           </a>
-          <a class="{% if {{page.title}} == 'Results' %}active{% endif %}" href='{{ site.baseurl }}/results' id='results'>
-            Results
-          </a>
-          <a class="{% if {{page.title}} == 'About' %}active{% endif %}" href='{{ site.baseurl }}/about' id='about'>
-            About
+          <a class="{% if {{page.title}} == 'Algorithm' %}active{% endif %}" href='{{ site.baseurl }}/algorithm' id='results'>
+            Algorithm
           </a>
         </nav>
       </div>
     </header>
     {{ content }}
-    {% if {{page.title}} == 'Home' %}<footer class = "bck dark padding"></footer>{% endif %}
   </body>
 </html>

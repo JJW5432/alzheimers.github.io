@@ -25,3 +25,19 @@ h1{
 #blood img {
 	width: 400px;
 }
+
+a, figure {
+    display: inline-block;
+}
+
+figure {
+	text-align: center;
+}
+figcaption {
+    margin: 10px 0 0 0;
+    color:black;
+    font-size: 85%;
+}
+figure {
+    padding: 5px;
+}

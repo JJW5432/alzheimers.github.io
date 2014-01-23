@@ -49,10 +49,6 @@
             Home
           %a#tests{href: "{{ site.baseurl }}/tests", class: "{% if {{page.title}} == 'Tests' %}active{% endif %}"}
             Tests
-          %a#results{href: "{{ site.baseurl }}/results", class: "{% if {{page.title}} == 'Results' %}active{% endif %}"}
-            Results
-          %a#about{href: "{{ site.baseurl }}/about", class: "{% if {{page.title}} == 'About' %}active{% endif %}"}
-            About
+          %a#results{href: "{{ site.baseurl }}/algorithm", class: "{% if {{page.title}} == 'Algorithm' %}active{% endif %}"}
+            Algorithm
     {{ content }}
-
-    {% if {{page.title}} == 'Home' %}<footer class = "bck dark padding"></footer>{% endif %}

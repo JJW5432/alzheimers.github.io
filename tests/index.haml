@@ -12,10 +12,15 @@
     .column_12
       -#http://www.omicsgroup.org/journals/application-of-positron-emission-tomography-in-drug-development-2167-0501.1000e128.php
       %h2
-        %img{src:"{{ site.baseurl }}/assets/images/pet.png", alt:"pet-scan", title:"pet-scan", align:'right', style:"padding-left:15px"}
+        %figure{style:"float:right; width: 440px; text-align:center"}
+          %img{src:"{{ site.baseurl }}/assets/images/pet.png", alt:"pet-scan", title:"pet-scan", align:'right', style:"padding-left:15px"}
+          %figcaption TEST CAPTION
         Pittsburgh compuond is a radioactive tracer developed specifically to have high affinity for beta amyloid and to cross the blood-brain barrier well. This allows the tracer to accumulate where the amyloid plaques are.
         It also contains a radioactive isotope with a short halflife that undergoes beta decay to produce a positron.
-        %img{src:"{{ site.baseurl }}/assets/images/pet-machine.gif", alt:"pet-machine", title:"pet-machine", align:'left', style:"padding-left:15px;"}The positron collides with an electron, creating two  photons traveling in opposite directions. Using a circle of detectors, researchers can check for photons that arrive on opposite sides simultaneously, and the original position of the decay can be extrapoloated. This allows for the creation of colored maps based on the concentration of decays, and therefore beta amyloid.
+        %figure{style:"float:left; width: 240px; text-align:center"}
+          %img{src:"{{ site.baseurl }}/assets/images/pet-machine.gif", alt:"pet-machine", title:"pet-machine", align:'left', style:"padding-left:15px;"}
+          %figcaption TEST CAPTION
+        The positron collides with an electron, creating two  photons traveling in opposite directions. Using a circle of detectors, researchers can check for photons that arrive on opposite sides simultaneously, and the original position of the decay can be extrapoloated. This allows for the creation of colored maps based on the concentration of decays, and therefore beta amyloid.
 
       
       
@@ -24,8 +29,11 @@
     .column_12
       %h1.text.bold.align.center Eye Test
   .row
-    .column_12
-      %img{src:"{{ site.baseurl }}/assets/images/retina.jpg", alt:"retina", title:"retina", align:"left", style:"padding-right:15px;"}
+    .column_4
+      %figure{style:"float:left; width: 415px; text-align:center; font-size: 35px"}
+        %img{src:"{{ site.baseurl }}/assets/images/retina.jpg", alt:"retina", title:"retina", align:"left", style:"padding-right:15px; width:400px;"}
+        %figcaption TEST CAPTION
+    .column_8
       %h2 Due to its convenience, this test is administered most frequently. It examines many characteristics of the eye to detect brain damage. A thinning retina can betray neuron death and prompt more test to determine the cause. Retinal plaques also can often be seen in the eye before they are visible in the brain. Telltale changes in the veins of the eye, specifically in thickness, length, curviness, and branching patterns can also alert doctors to brain issues.
 
 %section#genes.padding.color.white
@@ -35,7 +43,10 @@
   .row
     .column_12
       -# http://www.medscape.com/viewarticle/586756_3
-      %img{src:"{{ site.baseurl }}/assets/images/genes.jpg", alt:"retina", title:"retina", align:"right", style:"padding-left:15px; height: 400px"}
+      
+      %figure{style:"float:right; width: 415px; text-align:center; font-size: 35px"}
+        %img{src:"{{ site.baseurl }}/assets/images/genes.jpg", alt:"retina", title:"retina", align:"right", style:"padding-left:15px; height: 400px"}
+        %figcaption TEST CAPTION
       %h2 This test examines the alleles of certain genes assosciated with Alzheimer's. Certain genes, such as Amyloid Precursor Protein (APP), prenesilin 1, and prenesilin 2 guarantee that a patient will develop Alzheimer's, and increase risk of early onset. However, these genes account for fewer than 1% of cases; other mutations that increase the risk but do not guarantee that Alhzeimer's will develop are far more common. The most reliable such allele is APOE &epsilon;4, but other genes such as BIN1, CLU, PICALM, and CR1 are also tested. In addition, certain alleles can offer protection from Alzheimer's: while APOE &epsilon;4 increases risk, APOE &epsilon;2 reduces it.
 
 %section#blood.padding.color.white

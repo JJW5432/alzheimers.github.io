@@ -5,15 +5,8 @@ section {
 #circles {
 	float: left;
 	margin: 10px !important;
+	height: 700px;
 
-}
-
-#slider{
-	float:right;
-}
-
-#slider svg {
-	height: 600px;
 }
 
 .ontop {
@@ -67,18 +60,6 @@ section {
 	position: relative;
 	bottom: 20px;
 	right:30px;
-}
-
-#reccomendation {
-	z-index: 2;
-	position: relative;
-	width: 100%;
-}
-
-#reccomendation_container {
-	z-index: 2;
-	position: relative;
-	bottom:450px;
 }
 
 span.alz {

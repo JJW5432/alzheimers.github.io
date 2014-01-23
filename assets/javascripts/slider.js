@@ -38,7 +38,8 @@ var me = g,
         me.transform('t' + 0 + ',' + ly);
         percent = Math.round((1-ly/545)*100-90)
         t.attr("text", percent+"%" )
-        console.log(ly)
+        $("#intro").text($("#intro").text().replace(/\d+/, percent))
+        //console.log(ly)
 
         if (percent < 11) {reccomendation = "you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediatly."}
         else if (percent < 45) {reccomendation = "you increase the frequency of the testing you receive; it is likely that you will develop Alzheimer's soon."}
