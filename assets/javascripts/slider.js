@@ -24,7 +24,7 @@ p.push(paper.sector(200, 575, 25, 180, 360, {"fill": "green", "stroke": "none"})
 slider = paper.set()
 slider.push(s).push(r).push(p)
 
-starting_percentage = 0.10
+starting_percentage = 0.09
 starting = (1 - starting_percentage) * 545
 g = paper.set()
 g.push(c = paper.circle(200,starting+30,25).attr({"fill": "white", "fill-opacity":0} ))
@@ -39,14 +39,14 @@ var me = g,
         percent = Math.round((1-ly/545)*100-90)
         t.attr("text", percent+"%" )
         $("#intro").text($("#intro").text().replace(/\d+/, percent))
-        //console.log(ly)
+        console.log(ly)
 
         if (percent < 11) {reccomendation = "you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediatly."}
         else if (percent < 45) {reccomendation = "you increase the frequency of the testing you receive; it is likely that you will develop Alzheimer's soon."}
         else if (percent < 80) {reccomendation = "you begin preliminary treatments to reduce the number of plaques and slow neurodegeneration."}
         else {reccomendation = "you begin treatment immediately."}
 
-        $("#reccomendation").text(reccomendation)
+        //$("#reccomendation").text(reccomendation)
       }
       startFnc = function() {}
       endFnc = function() {
