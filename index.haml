@@ -4,7 +4,7 @@
   title: Home
   ---
 
-%section.bck.dark.text.center.padding
+%section.bck.dark.text.center.padding{style:"display:none"}
   .row
     .column_8.align.left{style: "font-size:2.8em"}
       %p.text.bold 
@@ -14,7 +14,7 @@
   %br
   .row
     .column_10.offset_2
-      %h3.align.left
+      %h3.text.normal.align.left
         Once neurodegeneration occurs, the damge is irreversable, so why would you wait until there are behavioral changes to diagnose Alzheimer&apos;s?
         %br
         %br
@@ -22,19 +22,19 @@
         %span.text.italic before
         the damage affects behavior, so that we stop the disease before it affects your loved ones.
 
-%section.bck.theme.text.left.padding
+%section.bck.theme.text.left.padding#circle-section
   .row
     .column_4#circles
-      %h3.ontop#eye_label.text.bold
+      %h3.text.normal.ontop#eye_label.text.bold
         %span.icon.eye-open
         Ocular Test
-      %h3.ontop#blood_label.text.bold
+      %h3.text.normal.ontop#blood_label.text.bold
         %img{src:"{{ site.baseurl }}/assets/images/needle.png"}
         Blood/CSF Test
-      %h3.ontop#pet_label.text.bold
+      %h3.text.normal.ontop#pet_label.text.bold
         %img{src:"{{ site.baseurl }}/assets/images/brain.png"}
         PET Scan
-      %h3.ontop#genes_label.text.bold
+      %h3.text.normal.ontop#genes_label.text.bold
         %img{src:"{{ site.baseurl }}/assets/images/dna.png"}
         Genetic Test
       %script{src:"{{ site.baseurl }}/assets/javascripts/circles.js"}
@@ -45,29 +45,32 @@
       #eye
         %h1.align.left.text.bold Ocular Test
         %br
-        %h3.align.left For a cheap and noninvasive look at conditions inside the brain, the eye exam is a valuable first tool. We examine multiple factors that could betray brain damage, such as retinal thickness, plaques, and vascular structure.
+        %h3.text.normal.align.left For a cheap and noninvasive look at conditions inside the brain, the eye exam is a valuable first tool. We examine multiple factors that could betray brain damage, such as retinal thickness, plaques, and vascular structure.
       #pet
         %h1.align.left.text.bold PET Scan
         %br
-        %h3.align.left
+        %h3.text.normal.align.left
           A radioactive tracer that bonds to amyloid is used to image the amyloid plaques in the brain, providing a way to diagnose the progress of the disease
           %i in vivo
           \.
       #blood
         %h1.align.left.text.bold Blood/CSF Test
         %br
-        %h3.align.left This test measures levels of three proteins in the blood and cerebrospinal fluid (CSF). The CSF test, while more invasive, is more accurate, while the blood test is easy and cheap to administer.
+        %h3.text.normal.align.left This test measures levels of three proteins in the blood and cerebrospinal fluid (CSF). The CSF test, while more invasive, is more accurate, while the blood test is easy and cheap to administer.
       #genes
         %h1.align.left.text.bold Genetic Test
         %br
-        %h3.align.left Certain genetic mutations greatly increase the risk of developing Alzheimer's, such as APOE &epsilon;4.
-%section.bck.light.padding{style:"height:700px"}
+        %h3.text.normal.align.left Certain genetic mutations greatly increase the risk of developing Alzheimer's, such as APOE &epsilon;4.
+%section.bck.light.padding#rec-sec
   .row
     .column_6
-      %h3.align.left#intro A statistcs-based algorithm combines your test results and tells you that your chance of developing Alzheimer's in the near future is 10%. Based on this, your doctor can recommend that:
+      %h3.text.normal.align.left#intro A statistcs-based algorithm combines your test results and tells you that your chance of developing Alzheimer's in the near future is 10%. Based on this, your doctor can recommend that:
       %br
     .column_3#slider
       %script{src:"{{ site.baseurl }}/assets/javascripts/slider.js"}
   .row#reccomendation_container
     .column_9.offset_1
-      %h1#reccomendation.text.bold.column_4 you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediately.
+      %h1#reccomendation.first.text.bold.column_4 you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediately.
+      %h1#reccomendation.text.bold.column_4 you increase the frequency of the testing you receive; it is likely that you will develop Alzheimer's soon.
+      %h1#reccomendation.text.bold.column_4 you begin preliminary treatments to reduce the number of plaques and slow neurodegeneration.
+      %h1#reccomendation.text.bold.column_4 you begin treatment immediately.

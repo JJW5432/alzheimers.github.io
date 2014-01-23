@@ -92,25 +92,25 @@ var rad = Math.PI / 180;
 
     select = function (winner) {
         if (selected != winner) {
-            $('#starter').css("display", "none")
+           // $('#starter').css("display", "none")
             relink_all()
             circle.forEach(function(e){
                 contract(e)
-                $("#"+test_of(e)).css("display", "none")
+                //$("#"+test_of(e)).css("display", "none")
             })
             expand(winner)
-            $("#"+test_of(winner)).css("display", "block")
+           // $("#"+test_of(winner)).css("display", "block")
             winner.unmouseout()
             selected = winner
         }
         else {
             circle.forEach(function(e){
                 contract(e)
-                $("#"+test_of(e)).css("display", "none")
+             //   $("#"+test_of(e)).css("display", "none")
             })
             relink_all()
             selected = false
-             $('#starter').css("display", "block")
+           //  $('#starter').css("display", "block")
             //if (! cycling) {start_cycle()}
             //throw new Error("linked")
         }
@@ -128,3 +128,4 @@ var rad = Math.PI / 180;
     $('#pet_label').click(function() {select(top_left)}).hover(function() {expand(top_left)}, function() {contract(top_left)})
     $('#genes_label').click(function() {select(bottom_right)}).hover(function() {expand(bottom_right)}, function() {contract(bottom_right)})
 
+    expand(top_right)

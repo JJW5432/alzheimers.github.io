@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-<section class='bck dark text center padding'>
+<section class='bck dark text center padding' style='display:none'>
   <div class='row'>
     <div class='column_8 align left' style='font-size:2.8em'>
       <p class='text bold'>
@@ -15,7 +15,7 @@ title: Home
   <br>
   <div class='row'>
     <div class='column_10 offset_2'>
-      <h3 class='align left'>
+      <h3 class='text normal align left'>
         Once neurodegeneration occurs, the damge is irreversable, so why would you wait until there are behavioral changes to diagnose Alzheimer&apos;s?
         <br>
         <br>
@@ -26,22 +26,22 @@ title: Home
     </div>
   </div>
 </section>
-<section class='bck theme text left padding'>
+<section class='bck theme text left padding' id='circle-section'>
   <div class='row'>
     <div class='column_4' id='circles'>
-      <h3 class='ontop text bold' id='eye_label'>
+      <h3 class='text normal ontop text bold' id='eye_label'>
         <span class='icon eye-open'></span>
         Ocular Test
       </h3>
-      <h3 class='ontop text bold' id='blood_label'>
+      <h3 class='text normal ontop text bold' id='blood_label'>
         <img src='{{ site.baseurl }}/assets/images/needle.png'>
         Blood/CSF Test
       </h3>
-      <h3 class='ontop text bold' id='pet_label'>
+      <h3 class='text normal ontop text bold' id='pet_label'>
         <img src='{{ site.baseurl }}/assets/images/brain.png'>
         PET Scan
       </h3>
-      <h3 class='ontop text bold' id='genes_label'>
+      <h3 class='text normal ontop text bold' id='genes_label'>
         <img src='{{ site.baseurl }}/assets/images/dna.png'>
         Genetic Test
       </h3>
@@ -55,12 +55,12 @@ title: Home
       <div id='eye'>
         <h1 class='align left text bold'>Ocular Test</h1>
         <br>
-        <h3 class='align left'>For a cheap and noninvasive look at conditions inside the brain, the eye exam is a valuable first tool. We examine multiple factors that could betray brain damage, such as retinal thickness, plaques, and vascular structure.</h3>
+        <h3 class='text normal align left'>For a cheap and noninvasive look at conditions inside the brain, the eye exam is a valuable first tool. We examine multiple factors that could betray brain damage, such as retinal thickness, plaques, and vascular structure.</h3>
       </div>
       <div id='pet'>
         <h1 class='align left text bold'>PET Scan</h1>
         <br>
-        <h3 class='align left'>
+        <h3 class='text normal align left'>
           A radioactive tracer that bonds to amyloid is used to image the amyloid plaques in the brain, providing a way to diagnose the progress of the disease
           <i>in vivo</i>
           .
@@ -69,20 +69,20 @@ title: Home
       <div id='blood'>
         <h1 class='align left text bold'>Blood/CSF Test</h1>
         <br>
-        <h3 class='align left'>This test measures levels of three proteins in the blood and cerebrospinal fluid (CSF). The CSF test, while more invasive, is more accurate, while the blood test is easy and cheap to administer.</h3>
+        <h3 class='text normal align left'>This test measures levels of three proteins in the blood and cerebrospinal fluid (CSF). The CSF test, while more invasive, is more accurate, while the blood test is easy and cheap to administer.</h3>
       </div>
       <div id='genes'>
         <h1 class='align left text bold'>Genetic Test</h1>
         <br>
-        <h3 class='align left'>Certain genetic mutations greatly increase the risk of developing Alzheimer's, such as APOE &epsilon;4.</h3>
+        <h3 class='text normal align left'>Certain genetic mutations greatly increase the risk of developing Alzheimer's, such as APOE &epsilon;4.</h3>
       </div>
     </div>
   </div>
 </section>
-<section class='bck light padding' style='height:700px'>
+<section class='bck light padding' id='rec-sec'>
   <div class='row'>
     <div class='column_6'>
-      <h3 class='align left' id='intro'>A statistcs-based algorithm combines your test results and tells you that your chance of developing Alzheimer's in the near future is 10%. Based on this, your doctor can recommend that:</h3>
+      <h3 class='text normal align left' id='intro'>A statistcs-based algorithm combines your test results and tells you that your chance of developing Alzheimer's in the near future is 10%. Based on this, your doctor can recommend that:</h3>
       <br>
     </div>
     <div class='column_3' id='slider'>
@@ -91,7 +91,10 @@ title: Home
   </div>
   <div class='row' id='reccomendation_container'>
     <div class='column_9 offset_1'>
-      <h1 class='text bold column_4' id='reccomendation'>you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediately.</h1>
+      <h1 class='first text bold column_4' id='reccomendation'>you relax; your risk is very low. You should continue to receive regular testing to ensure that if anything does develop it can be treated immediately.</h1>
+      <h1 class='text bold column_4' id='reccomendation'>you increase the frequency of the testing you receive; it is likely that you will develop Alzheimer's soon.</h1>
+      <h1 class='text bold column_4' id='reccomendation'>you begin preliminary treatments to reduce the number of plaques and slow neurodegeneration.</h1>
+      <h1 class='text bold column_4' id='reccomendation'>you begin treatment immediately.</h1>
     </div>
   </div>
 </section>

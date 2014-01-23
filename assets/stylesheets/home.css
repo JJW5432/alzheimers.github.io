@@ -1,7 +1,3 @@
-section {
-	max-height:800px ;
-}
-
 #circles {
 	float: left;
 	margin: 10px !important;
@@ -43,12 +39,34 @@ section {
 #container {
 	height: 800px;
 	width: 800px;
+
 }
 
 #eye, #pet, #blood, #genes {
-	display: none;
+	border: 3px solid black;
+	margin:2px;
+	/*display: none;*/
 }
 
+#eye {
+	border-color: red;
+}
+
+#genes {
+	position: relative;
+	right: 720px;
+	bottom:380px;
+}
+
+#blood {
+	position: relative;
+	right:360px;
+	bottom:160px;
+}
+
+#circle-section{
+	height:1120px;
+}
 
 #starter img {
 	zoom: 2;
@@ -66,17 +84,27 @@ span.alz {
 	font-size: 2.8em
 }
 
+#rec-sec{
+	height:900px;
+}
 
 #reccomendation {
 	z-index: 2;
 	position: relative;
 	width: 100%;
+	margin:5px;
+	border: 3px solid black;
+}
+
+.first {
+	border-color: red !important;
 }
 
 #reccomendation_container {
 	z-index: 2;
 	position: relative;
 	bottom:400px;
+
 }
 
 #slider{
