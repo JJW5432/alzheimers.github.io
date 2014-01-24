@@ -6,8 +6,19 @@ header {
 	line-height: 3em;
 }
 
+figure {
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	font-size: 16px;
+	color: black;
+}
+
 figcaption{
+	color: black;
 	display:inline;
+	font-size: 1em;
+	margin: 10px 0 0 0;
 }
 
 a#pet-nav:hover, a#pet-nav.active{
