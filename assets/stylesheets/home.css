@@ -51,17 +51,20 @@
 
 #eye {
 	border-color: red;
+	position: relative;
+	top:50px;
 }
 
 #genes {
 	position: relative;
-	right: 720px;
-	bottom:510px;
+	right: 320px;
+	bottom:410px;
+	width:300px;
 }
 
 #blood {
 	position: relative;
-	right:360px;
+	right:760px;
 	bottom:70px;
 }
 
